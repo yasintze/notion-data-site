@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-git`,
       options: {
         name: `notion-data`,
-        remote: `https://github.com/mitchmalone/notion-data`,
+        remote: `https://yasintze:${process.env.GITHUB_TOKEN}@github.com/mitchmalone/notion-data`,
         branch: `fix-patch-package`,
         patterns: `*/**`,
       },
